@@ -53,11 +53,52 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:text="Qualidade de serviço:"
             android:textSize="17dp"
             android:textStyle="bold" />
 
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:padding="10dp">
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Calcular Gorjeta"
+            android:backgroundTint="#4CAF50"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:text="Valor da Gorgeta:"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -72,27 +113,44 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp" />
+                android:padding="10dp">
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-        </LinearLayout>
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Valor Total:"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
 
-        <Button
-            android:layout_marginTop="5dp"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:text="Calcular Gorjeta"
-            android:backgroundTint="#4CAF50"
-            />
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
 
 
     </LinearLayout>
